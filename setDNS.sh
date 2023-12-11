@@ -5,7 +5,7 @@ if [ "$#" -ne 1 ]; then
     exit 1
 fi
 
-connection_name=$(nmcli -t -f NAME,TYPE con show --active | grep MSN | cut -d':' -f1)
+connection_name=$(nmcli -t -f NAME,TYPE con show --active | grep wireless | cut -d':' -f1)
 
 if [ -z "$connection_name" ]; then
     echo "No active WiFi connection found."
