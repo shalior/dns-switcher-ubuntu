@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=DNS Switcher
+Comment=TO switch dns using an app indicator
+Exec=/usr/bin/python3 /opt/dns_switcher/script.py
+Terminal=false
+Type=Application
+Categories=Utility;
